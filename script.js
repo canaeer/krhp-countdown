@@ -1,7 +1,7 @@
 // カウントダウンの目標日時を設定します
 // 例: 2025年12月31日 23時59分59秒
 // 今日の日付が2025年6月4日なので、少し先のテスト用に日付を変更してみましょう
-const targetDate = new Date('2025-06-06T00:00:00').getTime(); // 例: 今日の正午
+const targetDate = new Date('2025-06-06T19:00:00').getTime(); // 例: 今日の正午
 
 const countdownElement = document.getElementById('countdown');
 
