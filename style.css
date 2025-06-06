@@ -17,9 +17,27 @@ h1 {
 #countdown {
     font-size: 3em;
     font-weight: bold;
-    color: #007bff;
-    background-color: #fff;
+    color: #007bff; /* デフォルトの文字色 */
+    background-color: #fff; /* デフォルトの背景色 */
     padding: 20px 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* opacity、background-color、colorのtransitionを全て含める */
+    transition: opacity 0.5s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+
+/* 残り10分を切ったら文字を赤色にする */
+#countdown.red-countdown {
+    color: red;
+}
+
+/* 残り5分を切ったら背景を真っ赤、文字を白にする */
+#countdown.critical-countdown {
+    background-color: red; /* 背景を赤に */
+    color: white; /* 文字を白に */
+}
+
+/* 点滅時に透明にするクラスを再追加 */
+#countdown.transparent {
+    opacity: 0; /* 透明にする */
 }
